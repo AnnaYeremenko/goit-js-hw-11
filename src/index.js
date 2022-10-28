@@ -35,7 +35,7 @@ function onSearch(e) {
                 } else {
                     renderMarkup(data.hits);
                     Notiflix.Notify.success(
-                        "Hooray! We found ${data.totalHits} images."
+                        `Hooray! We found ${data.totalHits} images.`
                     );
                     refs.loadMoreBtn.style.display = "block";
                     lightbox.refresh();
