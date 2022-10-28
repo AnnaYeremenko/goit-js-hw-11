@@ -6,7 +6,7 @@ import SimpleLightbox from "simplelightbox";
 
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-const ref = {
+const refs = {
     searchForm: document.querySelector('#search-form'),
     inputData: document.querySelector('input'),
     searchBtn: document.querySelector('button[type="submit"]'),
@@ -16,9 +16,9 @@ const ref = {
 let lightbox = new SimpleLightbox(".gallery a");
 let page = 1;
 
-refs.searchForm.addEventListener("submit", onSearch);
-refs.loadMoreBtn.addEventListener("click", onLoadMore);
-refs.loadMoreBtn.style.display = "none";
+refs.searchForm.addEventListener('submit', onSearch);
+refs.loadMoreBtn.addEventListener('click', onLoadMore);
+refs.loadMoreBtn.style.display = 'none';
 
 function onSearch(e) {
     e.preventDefault();

@@ -1,6 +1,6 @@
-const axios = require("axios").default;
-const baseUrl = "https://pixabay.com/api/";
-const KEY = "30878986-dbe096aab184f812986a58540";
+const axios = require('axios').default;
+const baseUrl = 'https://pixabay.com/api/';
+const KEY = '30878986-dbe096aab184f812986a58540';
 
 export async function fetchImages(searchQuery, page) {
     const response = await axios.get(
