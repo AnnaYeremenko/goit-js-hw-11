@@ -5,6 +5,12 @@
   "reporters": [
     "...",
     "parcel-reporter-clean-dist"
-  ]
-
+  ],
+  "transformers": {
+    "*.hbs": [
+      "parcel-transformer-hbs"
+    ]
+  }
 }
+
+
